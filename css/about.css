@@ -12,6 +12,7 @@ body {
 .logo-text {
   color: white;
   font-size: 100px;
+  padding-left: 40px;
 }
 .container {
   background-color: #070b0d;
