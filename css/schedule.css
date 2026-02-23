@@ -1,27 +1,41 @@
+body {
+  background-color: #070B0D;
+  color: white;
+}
 /* ------header------- */
 header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
-  padding: 20px 20px;
-  border: 1px solid black;
+  padding: 50px 130px;
+  /* border: 1px solid white; */
 
   font-size: 45px;
+  font-weight: 800;
 }
 
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #c6c6c8;
+}
 
 /* ------main------- */
 main {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  gap: 20px
-}
-/* --main -> 에정 목록---- */
-.update-concerts {
-  border: 1px solid black;
+  padding: 50px 130px;
+  /* border: 1px solid white; */
+  gap: 120px;
+
+  font-size: 45px;
+  font-weight: 800;
+
 }
 
+/* --main -> 에정 목록---- */
 details {
   padding: 20px 20px;
 
@@ -32,27 +46,78 @@ summary {
   align-items: center;
   gap: 100px;
   padding: 20px 20px;
-  border: 1px solid black;
 }
 
 time {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
 }
 
 .year {
   writing-mode: vertical-rl;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.date {
+  display: flex;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.day {
+  font-size: 30px;
+  font-weight: 500;
+  
+}
+
+.main-atea{
+  display: flex;
+  align-items: flex-end;
+  font-size: 35px;
+  font-weight: 500;
+  gap: 20px
+}
+
+.atea_name{
+  font-size: 28px;
+  font-weight: 450;
+  color: #9e121b;
+}
+
+/* (디테일 칸) */
+.concerts-details {
+  display: flex;
+  padding: 15px 60px;
+  gap: 20px;
+  
+}
+
+.details-contents {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 50px;
+  /* color: #a3a2a2; */
+}
+
+.details-information {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+
 }
 
 /* --main -> 지난 목록---- */
 #past-concerts {
-  border: 1px solid black;
+  /* border: 1px solid white; */
 }
 
 /* ----목록 내용 펼치기 요소---- */
 details summary::marker{font-size:0;}
 
 details summary {
+  border-bottom: 1px solid white;
   cursor: pointer;
 }
