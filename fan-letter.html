@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=주소&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fan-letter.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="section">
+        <h1 class="title">Fan Letter</h1>
+
+        <!-- 이름 -->
+        <div class="insertbar">
+          <span class="insertbar_text">이름</span>
+          <input class="insertbar_box" type="text" />
+        </div>
+
+        <!-- 이메일 -->
+        <div class="insertbar">
+          <span class="insertbar_text">이메일</span>
+          <input class="insertbar_box" type="email" />
+        </div>
+
+        <!-- 파일 첨부 -->
+        <div class="insertbar">
+          <span class="insertbar_text"></span>
+          <div class="file-box">파일 첨부(.jpg, .svg, .png)</div>
+        </div>
+
+        <!-- 메세지 -->
+        <div class="insertbar">
+          <span class="insertbar_text">메세지</span>
+          <div class="message-wrap">
+            <textarea class="message-box"></textarea>
+            <span class="char-count">0/200</span>
+          </div>
+        </div>
+
+        <!-- 완료 -->
+        <div class="complete-area">
+          <a href="./community.html" class="complete-btn">완료</a>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

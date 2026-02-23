@@ -1,0 +1,93 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.section {
+  border: 1px solid #555;
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.insertbar {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.insertbar_text {
+  width: 60px;
+  text-align: right;
+  flex-shrink: 0;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.insertbar_box {
+  flex: 1;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  padding: 6px 10px;
+  height: 32px;
+}
+
+.file-box {
+  flex: 1;
+  border: 1px dashed #555;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.message-wrap {
+  flex: 1;
+  position: relative;
+}
+
+.message-box {
+  width: 100%;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  padding: 8px 10px;
+  height: 100px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.char-count {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.complete-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.complete-btn {
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 6px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
