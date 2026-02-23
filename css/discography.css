@@ -1,14 +1,12 @@
 body {
     margin: 0;
     font-family: 'Pretendard', sans-serif;
-    background: #f2f2f2;
+    background: #7A1118;
 }
 
 main {
     margin-right: 280px;
-    /* 사이드바 공간 확보 */
     padding-top: 90px;
-    /* 헤더 공간 확보 */
 }
 
 /* ================= 상단 ================= */
@@ -98,11 +96,11 @@ a:hover {
 /* ================= 사이드 바 ================= */
 
 .disco_sidebar {
-    width: 280px;
+    width: 310px;
     height: calc(100vh - 90px);
     position: fixed;
     right: 0;
-    top: 90px;
+    top: 93px;
     background: #111;
     color: white;
     padding: 40px 20px;
@@ -152,3 +150,8 @@ a:hover {
 .footer img {
     width: 30px;
 } */
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/SadocWild.ttf') format('truetype');
+}
