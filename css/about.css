@@ -13,6 +13,7 @@ body {
   font-size: 100px;
 }
 .container {
+  background-color: #070b0d;
   max-width: 1200px;
   margin: 50px auto;
   border: 1px solid black;
