@@ -1,5 +1,5 @@
 body {
-  background-color: #4f5054;
+  background-color: #070b0d;
 }
 
 .logo {
@@ -10,6 +10,7 @@ body {
 }
 
 .logo-text {
+  color: white;
   font-size: 100px;
 }
 .container {
