@@ -8,6 +8,8 @@ img {
   display: block; /*이미지 아래의 알 수 없는 여백 제거*/
   width: 100%;
   height: auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 
 main {
@@ -135,7 +137,19 @@ main {
   margin-top: 10px;
 }
 
+.video-title {
+  color: #f0f0f0;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 0 10px black;
+}
+
 /*iframe 스타일*/
+.iframe-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 iframe {
   flex-shrink: 0;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
@@ -149,8 +163,11 @@ iframe {
   flex-shrink: 0; /*여기서 설정한대로 width가 안 먹었던 이유가!!!이 설정을 안해줬기 때문이었다.
   그래서 여기서 설정한 width는 안되는데, img로 설정하면 됐던이유도 img는 flex-shrink가 이미 되어있나보지...
   근데 검색해보니 img는 디폴트값이 1이라는데 우케 된거지 흠~*/
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
+}
+.video a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* 스크롤바 전체 영역 */
