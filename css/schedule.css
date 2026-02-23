@@ -87,10 +87,12 @@ time {
   color: #9e121b;
 }
 
+
+
 /* (디테일 칸) */
 .concerts-details {
   display: flex;
-  padding: 15px 60px;
+  padding: 30px 60px;
   gap: 20px;
   
 }
