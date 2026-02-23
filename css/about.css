@@ -1,0 +1,50 @@
+body {
+  background-color: #4f5054;
+}
+
+.logo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 100px;
+}
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  border: 1px solid black;
+}
+
+.member-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.member {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.member img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.name {
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.text {
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.8;
+  border-top: 1px solid black;
+}
