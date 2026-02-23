@@ -198,3 +198,9 @@ iframe {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #d3d3d9;
 }
+
+/*내 페이지 전용 footer 추가 스타일 사항*/
+.footer {
+  background-color: #070b0d;
+  padding: 20px;
+}
