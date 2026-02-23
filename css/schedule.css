@@ -1,0 +1,58 @@
+/* ------header------- */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px;
+  border: 1px solid black;
+
+  font-size: 45px;
+}
+
+
+/* ------main------- */
+main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  gap: 20px
+}
+/* --main -> 에정 목록---- */
+.update-concerts {
+  border: 1px solid black;
+}
+
+details {
+  padding: 20px 20px;
+
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 20px 20px;
+  border: 1px solid black;
+}
+
+time {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.year {
+  writing-mode: vertical-rl;
+}
+
+/* --main -> 지난 목록---- */
+#past-concerts {
+  border: 1px solid black;
+}
+
+/* ----목록 내용 펼치기 요소---- */
+details summary::marker{font-size:0;}
+
+details summary {
+  cursor: pointer;
+}
