@@ -1,3 +1,46 @@
+/*index.css*/
+
+body {
+    background-color: #070B0D;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e5e7ed;
+}
+
+.gnb img {
+    width: 50px;
+}
+
+.gnb_menu {
+    display: flex;
+    gap: 30px;
+}
+
+a:hover {
+    color: #767882;
+}
+
+
+
 .gallery {
     max-width: 2100px;
     margin: 0 auto;
@@ -60,4 +103,21 @@
 @font-face {
     font-family: 'MyCustomFont';          /* 웹에서 사용할 이름 */
     src: url('../font/SadocWild.ttf') format('truetype');  /*폰트 파일 경로와 타입 */
+}
+
+
+/*index.css*/
+.footer {
+
+}
+
+.footer_social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer img {
+    width: 30px;
 }
