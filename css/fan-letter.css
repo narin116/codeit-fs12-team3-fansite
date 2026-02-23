@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "SadocWild";
+  src: url("../font/SadocWild.ttf");
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -12,9 +17,35 @@ body {
 }
 
 .title {
-  text-align: center;
+  font-family: "SadocWild";
   font-size: 32px;
   margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: color 0.2s;
+}
+
+.title-logo {
+  height: 1em;
+}
+
+.title:hover {
+  color: #f9060b;
+}
+
+.title:hover .title-logo {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .insertbar {
@@ -90,4 +121,64 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.complete-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* GNB 붙여넣기 */
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7ed;
+}
+
+.gnb img {
+  width: 50px;
+}
+
+.gnb_menu {
+  display: flex;
+  gap: 30px;
+}
+
+a:hover {
+  color: #767882;
+}
+
+.main {
+}
+
+.footer {
+}
+
+.footer_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  width: 30px;
 }
