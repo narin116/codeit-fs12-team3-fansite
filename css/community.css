@@ -73,6 +73,7 @@ header h1 {
 
 .board-list li .title {
   color: #333;
+  text-align: center;
 }
 
 /* 홀수행 배경색 */
