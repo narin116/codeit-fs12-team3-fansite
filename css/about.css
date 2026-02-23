@@ -1,5 +1,5 @@
 body {
-  background-color: #4f5054;
+  background-color: #070b0d;
 }
 
 .logo {
@@ -10,7 +10,10 @@ body {
 }
 
 .logo-text {
+  font-family: SadocWild;
+  color: white;
   font-size: 100px;
+  padding-left: 40px;
 }
 .container {
   background-color: #070b0d;
@@ -48,4 +51,23 @@ body {
   font-size: 14px;
   line-height: 1.8;
   border-top: 1px solid black;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #7a1118;
+  color: black;
+}
+
+.button {
+  text-align: center;
+  align-items: end;
 }
