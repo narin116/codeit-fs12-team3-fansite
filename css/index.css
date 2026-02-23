@@ -1,3 +1,7 @@
+body {
+    background-color: #070B0D;
+}
+
 
 a {
     text-decoration: none;
@@ -34,9 +38,20 @@ a:hover {
 }
 
 .main {
-    background-color: #070B0D;
+
 }
 
 .footer {
 
+}
+
+.footer_social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer img {
+    width: 30px;
 }
