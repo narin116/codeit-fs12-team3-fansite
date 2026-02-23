@@ -19,10 +19,29 @@ iframe 비디오 구조
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activities</title>
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/activities.css" />
   </head>
   <body>
-    <!--main-->
+    <!--HEADER-->
+    <header class="header">
+      <nav class="gnb">
+        <a href="index.html"
+          ><img id="logo" src="/img/logo.svg" alt="slilcagel instragram"
+        /></a>
+        <ul class="gnb_menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="discography.html">DISCOGRAPHY</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="activities.html">ACTIVITIES</a></li>
+          <li><a href="schedule.html">SCHEDULE</a></li>
+          <li><a href="fan-letter.html">LETTER</a></li>
+          <li><a href="community.html">COMMUNITY</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--MAIN-->
     <main>
       <!--전체 타이틀 (이 페이지의 제목)-->
       <h1 class="title">activities</h1>
@@ -32,30 +51,37 @@ iframe 비디오 구조
           <h2 class="sub-title">Latest Videos</h2>
           <div class="latest-videos-container">
             <div class="video-list-row">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/72BcpVOGkEY?si=kHBRsKfzVWajeEGl"
-                title="YouTube video player, 당밤나밤 김한주"
-                frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <div class="iframe-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/72BcpVOGkEY?si=kHBRsKfzVWajeEGl"
+                  title="YouTube video player, 당밤나밤 김한주"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <h3 class="video-title">
+                  [당밤나밤] EP.06 벌칙 걸린 김한주 님과 보드게임으로 지새우는
+                  밤🎲
+                </h3>
+              </div>
               <div class="video">
                 <a href="https://youtu.be/tNpjw-_4uvs?si=quzkrE_CyGaP031Y">
                   <img
                     src="https://img.youtube.com/vi/tNpjw-_4uvs/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -64,6 +90,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/rbO1mvaKxzg/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -72,6 +99,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/gLvrneoLJlg/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
 
@@ -82,6 +110,7 @@ iframe 비디오 구조
                     alt="유튜브 썸네일 이미지"
                   />
                 </a>
+                <h3 class="video-title">이것은 제목</h3>
               </div>
             </div>
           </div>
@@ -99,30 +128,34 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/sUwRwMmM7BU/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="rank-text">2nd</div>
             </div>
             <!--1등-->
             <div class="view-1st">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/sLamdAw0xis?si=VNdQIMhVOjMhmeda"
-                title="YouTube video player"
-                frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <div class="iframe-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/sLamdAw0xis?si=VNdQIMhVOjMhmeda"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <h3 class="video-title">이것은 제목</h3>
+              </div>
               <div class="rank-text">1st</div>
             </div>
             <!--3등-->
@@ -133,6 +166,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/4dioshgq6k4/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="rank-text">3rd</div>
@@ -152,6 +186,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/-zY-ciuC04Q/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -160,6 +195,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/9w3pJwI4FcQ/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -168,6 +204,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/Q6B7vIyA01U/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -176,6 +213,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/tNpjw-_4uvs/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -184,6 +222,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/tNpjw-_4uvs/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
             </div>
@@ -198,6 +237,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/7UrboDwI_qY/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -206,6 +246,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/UQj9uytFVjs/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -214,6 +255,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/mCAhVj0SuAQ/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -222,6 +264,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/H9AoEu_itQA/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -230,6 +273,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/-e8MjrtQiII/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
             </div>
@@ -244,6 +288,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/rbO1mvaKxzg/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -252,6 +297,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/gLvrneoLJlg/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
 
@@ -261,6 +307,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/GBRVRSuQlrk/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -269,6 +316,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/tNpjw-_4uvs/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
               <div class="video">
@@ -277,6 +325,7 @@ iframe 비디오 구조
                     src="https://img.youtube.com/vi/tNpjw-_4uvs/0.jpg"
                     alt="유튜브 썸네일 이미지"
                   />
+                  <h3 class="video-title">이것은 제목</h3>
                 </a>
               </div>
             </div>
@@ -284,5 +333,25 @@ iframe 비디오 구조
         </section>
       </div>
     </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <ul class="gnb_menu">
+        <li>
+          <a href="https://www.instagram.com/silicagel.official/"><img /></a>
+        </li>
+        <li>
+          <a href="https://x.com/SILICAGEL_SEOUL"><img /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@SilicaGel"><img /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/silicagel"><img /></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@silicagel_official"><img /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
