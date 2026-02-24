@@ -182,7 +182,7 @@ header h1 {
   box-sizing: border-box;
 }
 .textBox {
-  height: 50px;
+  height: 150px;
 }
 .submit-btn {
   display: flex;
@@ -192,4 +192,9 @@ header h1 {
 }
 input::placeholder {
   color: #b8b8b8;
+}
+.writting-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
