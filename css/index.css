@@ -6,11 +6,6 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-body {
-    background-color: black;
-    margin: 0;
-}
-
 a {
     text-decoration: none;
     font-size: 20px;
@@ -52,6 +47,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: black;
 }
 
 .main_font_title {
@@ -79,14 +75,6 @@ a:hover {
     scroll-margin-top: 95px;
 }
 
-.main_section1_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
 .main_section2 {
     display: flex;
     justify-content: space-between;
@@ -106,25 +94,42 @@ a:hover {
 
 .main_section2_container {
     display: flex;
-    width: 300px;
+    width: 400px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
 }
 
 #genre {
     display: flex;
     flex-direction: column;
-    font-family: pretendard;
-    align-items: center;
-    font-size: 40px;
-    color: white;
-    gap: 10px;
+    font-family: "SadocWild";
+    justify-content: center;
+    align-items: start;
+    font-size: 50px;
+    color: black;
+    gap: 50px;
 }
 
-#genre_content {
+.genre_label {
+    padding: 10px;
     background-color: #7A1118;
+}
+
+#genre_cont {
+    font-family: "Pretendard";
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b6b8bf;
+}
+
+#postrock {
+    padding-left: 100px;
+}
+
+#exprock {
+    padding-left: 50px;
+    font-size: 45px;
 }
 
 .main_section3 {
