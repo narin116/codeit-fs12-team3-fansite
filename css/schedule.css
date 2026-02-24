@@ -1,0 +1,206 @@
+body {
+  background-color: #070B0D;
+  color: white;
+}
+/* --------top-------- */
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.top {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7ed;
+}
+
+.gnb img {
+  width: 50px;
+}
+
+.gnb_menu {
+  display: flex;
+  gap: 30px;
+}
+
+a:hover {
+  color: #767882;
+}
+
+/* ------header------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 200px 130px;
+  /* border: 1px solid white; */
+
+  font-size: 60px;
+  font-weight: 800;
+  
+}
+
+header::after {
+  content: ""; /* 가상 요소 필수 속성 */
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url(../img/schedule-concert.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.header_a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #c6c6c8;
+}
+
+/* ------main------- */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 130px;
+  /* border: 1px solid white; */
+  gap: 120px;
+
+  font-size: 35px;
+  
+}
+
+/* --main -> 에정 목록---- */
+.update-concerts {
+  font-style: italic;
+}
+details {
+  padding: 25px 20px;
+
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  /* gap: 100px; */
+  padding: 20px 20px;
+}
+
+time {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  padding-right: 100px;
+}
+
+.year {
+  writing-mode: vertical-rl;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.date {
+  display: flex;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.day {
+  font-size: 30px;
+  font-weight: 500;
+  
+}
+
+.main-atea{
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  
+  gap: 20px
+}
+
+.atea_name{
+  font-size: 28px;
+  font-weight: 450;
+  color: #ac0f19;
+}
+
+.ticket {
+  color: #ffffff;
+}
+
+
+/* (디테일 칸) */
+.concerts-details {
+  display: flex;
+  padding: 45px 60px;
+  gap: 20px;
+  
+}
+
+.details-contents {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 50px;
+  font-style: normal;
+  /* color: #a3a2a2; */
+}
+
+.details-information {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 50px;
+  font-style: normal;
+
+}
+
+/* --main -> 지난 목록---- */
+#past-concerts {
+  font-style: italic;
+  color: #aaa9a9;
+  padding: 200px 0;
+  /* border: 1px solid white; */
+}
+
+/* ----목록 내용 펼치기 요소---- */
+details summary::marker{font-size:0;}
+
+details summary {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  font-style: normal;
+}
+
+/* ---------footer-------------------- */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: white;
+    color: #4F5054;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer img {
+    width: 30px;
+}
