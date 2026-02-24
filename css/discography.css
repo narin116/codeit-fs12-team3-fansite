@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: 'Pretendard', sans-serif;
-    background: #7a1118;
     background: #f2f2f2;
 }
 
@@ -47,7 +46,6 @@ a:hover {
 }
 
 /* ================= 앨범 상세 ================= */
-
 .disco_album_detail {
     display: none;
     max-width: 800px;
