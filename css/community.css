@@ -87,12 +87,13 @@ header h1 {
 /* 검색창 */
 .search-box {
   text-align: center;
+  margin: 10px 0;
 }
 
 .search-box input {
   width: 250px;
   padding: 8px 12px;
-  height: 25px;
+  height: 42px;
   font-size: 0.9rem;
   border: 1px solid #ccc;
   outline: none;
