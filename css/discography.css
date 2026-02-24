@@ -8,46 +8,11 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* ================= 상단 ================= */
-
-a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-}
-
-.header {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-}
-
-.gnb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7ed;
-}
-
-.gnb img {
-    width: 50px;
-}
-
-.gnb_menu {
-    display: flex;
-    gap: 30px;
-}
-
-a:hover {
-    color: #767882;
-}
-
 /* ================= 메인 ================= */
 main {
     margin-right: 280px;
     padding-top: 90px;
+    padding-bottom: 150px;
 }
 
 .disco_main_img {
@@ -61,10 +26,10 @@ main {
 
 /* ================= 앨범 상세 ================= */
 .disco_album_detail {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 200px;
     display: none;
     max-width: 800px;
-    min-height: 880px;
+    min-height: 700px;
     margin: 0 auto 100px;
     padding: 40px;
     background: #fff;
@@ -156,24 +121,11 @@ main {
 /* ================= 하단 ================= */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: white;
-    color: #4F5054;
+
     position: relative;
     z-index: 1000;
 }
 
-.footer_social {
-    display: flex;
-    justify-content: center;
-}
-
-.footer img {
-    width: 30px;
-}
 
 @font-face {
     font-family: 'MyCustomFont';
