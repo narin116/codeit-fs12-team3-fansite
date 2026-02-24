@@ -96,7 +96,6 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     min-height: calc(100vh - 95px);
-    padding: 100px 200px;
     gap: 50px;
     
     scroll-snap-align: start;
@@ -107,6 +106,29 @@ a:hover {
     display: flex;
     height: 650px;
     border-radius: 0px;
+}
+
+.main_section2_container {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#genre {
+    display: flex;
+    flex-direction: column;
+    font-family: pretendard;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    gap: 10px;
+}
+
+#genre_content {
+    background-color: #7A1118;
 }
 
 .main_section3 {
@@ -131,6 +153,37 @@ a:hover {
 .main_section3 img {
     width: 600px;
 }
+
+#top_btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    color: #4F5054;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
+    /* 초기에는 숨김 */
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+}
+
+/* section1 스냅 아웃 후 버튼 보이기 */
+.main_section1:has(+ .main_section2) ~ #top_btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 
 /*
 #top_btn {
