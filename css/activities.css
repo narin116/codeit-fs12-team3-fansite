@@ -107,7 +107,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-right: 15px; /*스크롤바와 콘텐츠를 사이를 벌리기 위함*/
+  padding: 0 15px; /*스크롤바와 콘텐츠를 사이를 벌리기 위함*/
 
   overflow: overlay; /*이렇게 해야 스크롤바가 콘텐츠를 가리지 않는다*/
 
