@@ -43,16 +43,28 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 50px 130px;
+  padding: 200px 130px;
   /* border: 1px solid white; */
 
   font-size: 60px;
   font-weight: 800;
+  
+}
+
+header::after {
+  content: ""; /* 가상 요소 필수 속성 */
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url(../img/schedule-concert.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 .header_a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   color: #c6c6c8;
 }
@@ -65,21 +77,23 @@ main {
   /* border: 1px solid white; */
   gap: 120px;
 
-  font-size: 45px;
-  font-weight: 800;
-
+  font-size: 35px;
+  
 }
 
 /* --main -> 에정 목록---- */
+.update-concerts {
+  font-style: italic;
+}
 details {
-  padding: 20px 20px;
+  padding: 25px 20px;
 
 }
 
 summary {
   display: flex;
   align-items: center;
-  gap: 100px;
+  /* gap: 100px; */
   padding: 20px 20px;
 }
 
@@ -88,12 +102,14 @@ time {
   justify-content: center;
   align-items: baseline;
   gap: 10px;
+  padding-right: 100px;
 }
 
 .year {
   writing-mode: vertical-rl;
   font-size: 25px;
   font-weight: 500;
+  font-style: normal;
 }
 
 .date {
@@ -111,23 +127,28 @@ time {
 .main-atea{
   display: flex;
   align-items: flex-end;
+  text-align: center;
   font-size: 35px;
   font-weight: 500;
+  
   gap: 20px
 }
 
 .atea_name{
   font-size: 28px;
   font-weight: 450;
-  color: #9e121b;
+  color: #ac0f19;
 }
 
+.ticket {
+  color: #ffffff;
+}
 
 
 /* (디테일 칸) */
 .concerts-details {
   display: flex;
-  padding: 30px 60px;
+  padding: 45px 60px;
   gap: 20px;
   
 }
@@ -136,6 +157,7 @@ time {
   font-size: 25px;
   font-weight: 400;
   line-height: 50px;
+  font-style: normal;
   /* color: #a3a2a2; */
 }
 
@@ -143,11 +165,14 @@ time {
   font-size: 28px;
   font-weight: 300;
   line-height: 50px;
+  font-style: normal;
 
 }
 
 /* --main -> 지난 목록---- */
 #past-concerts {
+  font-style: italic;
+  color: #aaa9a9;
   /* border: 1px solid white; */
 }
 
@@ -157,4 +182,6 @@ details summary::marker{font-size:0;}
 details summary {
   border-bottom: 1px solid white;
   cursor: pointer;
+  font-style: normal;
 }
+
