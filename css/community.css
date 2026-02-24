@@ -9,6 +9,9 @@ body {
   margin: 0 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
 /* 헤더 */
 header h1 {
   display: flex;
