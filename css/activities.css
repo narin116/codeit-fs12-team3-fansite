@@ -37,12 +37,15 @@ main {
 /*최신 동영상 목록 : 최신영상 텍스트 + 비디오 묶음 */
 .latest-videos {
   display: flex;
-  gap: 50px;
+  gap: 20px;
+  flex-direction: column;
 
-  padding: 30px 50px;
+  padding: 25px 150px;
 
   background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0 0 100px black;
+  box-shadow:
+    inset 0 0 100px black,
+    0 0 20px rgba(0, 0, 0, 0.426);
 }
 .latest-videos-container {
 }
@@ -50,11 +53,15 @@ main {
 /*비디오 랭킹 스타일*/
 .view-ranking {
   display: flex;
-  padding: 30px 50px;
-  gap: 50px;
+  flex-direction: column;
+
+  padding: 25px 150px;
+  gap: 20px;
 
   background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0 0 100px black;
+  box-shadow:
+    inset 0 0 100px black,
+    0 0 20px rgba(0, 0, 0, 0.426);
 }
 
 .video-ranking-container {
@@ -138,19 +145,19 @@ main {
 
   font-size: 40px;
   font-weight: 200;
-  margin-bottom: 10px;
 }
 
 .latest-videos .sub-title,
 .view-ranking .sub-title {
-  writing-mode: vertical-rl;
+  /*타이틀 옆으로 보내는 것 관련 속성. */
+  /* writing-mode: vertical-rl;
   text-align: left;
   transform: rotate(180deg);
   letter-spacing: 2px;
-  line-height: 1;
+  line-height: 1; */
 
-  font-size: 80px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .rank-text {
@@ -209,7 +216,7 @@ iframe {
 /*플로팅 버튼*/
 #floating-btn-youtube {
   background-color: black;
-  box-shadow: 0 0 8px white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.764);
   width: 110px;
   height: 110px;
   border-radius: 50%;
