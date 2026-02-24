@@ -98,6 +98,10 @@ summary {
   padding: 30px 50px;
 }
 
+summary:hover {
+  color: #767882;
+}
+
 time {
   display: flex;
   justify-content: center;
@@ -145,6 +149,7 @@ time {
   font-size: 20px;
   color: #ffffff;
 }
+
 
 
 /* (디테일 칸) */
