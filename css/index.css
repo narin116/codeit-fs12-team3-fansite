@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-display: swap;
-}
+
 
 * {
     box-sizing: border-box;
@@ -19,35 +14,6 @@ a {
     color: black;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: #ffffff;
-}
-
-.gnb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7ed;
-}
-
-.gnb img {
-    width: 50px;
-}
-
-.gnb_menu {
-    display: flex;
-    gap: 30px;
-}
-
-a:hover {
-    color: #767882;
-}
-    
 .main {
     display: flex;
     min-height: calc(100vh - 95px);
@@ -208,15 +174,5 @@ a:hover {
     padding: 20px 100px;
     background-color: white;
     color: #4F5054;
-    
     scroll-snap-align: start;
-}
-
-.footer_social {
-    display: flex;
-    justify-content: center;
-}
-
-.footer img {
-    width: 30px;
 }
