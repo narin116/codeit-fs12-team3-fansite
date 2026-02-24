@@ -262,59 +262,59 @@ details summary {
 
 @media(max-width: 1980px) {
   header {
-     padding: 150px 100px;  
+     padding: 150px 150px;  
   }
 
   .title{ 
-  font-size: 50px;
-  gap: 15px;
+  font-size: 40px;
+  gap: 13px;
   /* color: red; */
   }
   .title-p, .header_a{
-    font-size: 18px;
+    font-size: 15px;
   }
 
   /* main */
   main {
-    padding: 80px 100px;
+    padding: 80px 150px;
   }
   .update-concerts, #past-concerts {
-    font-size: 27px;
+    font-size: 23px;
   }
   .year{
-    font-size: 16px;
+    font-size: 13px;
   }
   .date{
-    font-size: 47px;
+    font-size: 35px;
   }
   .day {
-    font-size: 20px;
+    font-size: 15px;
   }
   .main-atea {
-    font-size: 27px;
+    font-size: 25px;
     
   }
   .atea_name {
-    font-size: 22px;
+    font-size: 19px;
   }
   .ticket, .done{
-    font-size: 18px;
+    font-size: 16px;
   }
   /* 디테일 */
   th{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 10px;
   }
 
   td{
-    font-size: 25px;
+    font-size: 23px;
   }
 
   .concerts-details img {
   width: 100%;
-  max-width: 200px;
+  max-width: 170px;
   border-radius: 20px;
   height: auto;
   object-fit: contain;
-}
+  }
 }
