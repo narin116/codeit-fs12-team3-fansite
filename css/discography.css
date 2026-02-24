@@ -1,30 +1,35 @@
 body {
+    overflow: auto;
     margin: 0;
     font-family: 'Pretendard', sans-serif;
-    background: #f2f2f2;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* ================= 메인 ================= */
 main {
-    position: relative;
+    margin-right: 280px;
+    padding-top: 90px;
+    padding-bottom: 150px;
 }
 
-/* ================= 왼쪽 콘텐츠 ================= */
-
-.disco_content {
-    padding: 60px 80px;
-    flex: 1;
+.disco_main_img {
+    background-image: url("../img/배경.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    height: 100vh;
 }
 
-.disco_content h1 {
-    font-size: 40px;
-    margin-bottom: 40px;
-}
+
 
 /* ================= 앨범 상세 ================= */
-
 .disco_album_detail {
+    scroll-margin-top: 200px;
     display: none;
     max-width: 800px;
+    min-height: 700px;
     margin: 0 auto 100px;
     padding: 40px;
     background: #fff;
@@ -71,14 +76,14 @@ main {
 /* ================= 사이드 바 ================= */
 
 .disco_sidebar {
-    width: 280px;
-    height: 100vh;
+    width: 310px;
+    height: calc(100vh - 90px);
     position: fixed;
     right: 0;
-    top: 0;
+    top: 93px;
     background: #111;
     color: white;
-    padding: 60px 20px;
+    padding: 40px 20px;
     overflow-y: auto;
 }
 
@@ -111,4 +116,18 @@ main {
     background: #333;
     color: white;
     border-radius: 4px;
+}
+
+/* ================= 하단 ================= */
+
+.footer {
+
+    position: relative;
+    z-index: 1000;
+}
+
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../font/SadocWild.ttf') format('truetype');
 }
