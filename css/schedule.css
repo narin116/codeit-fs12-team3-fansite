@@ -92,9 +92,10 @@ details {
 
 summary {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   /* gap: 100px; */
-  padding: 20px 20px;
+  padding: 30px 50px;
 }
 
 time {
@@ -140,7 +141,8 @@ time {
   color: #ac0f19;
 }
 
-.ticket {
+.ticket, .done {
+  font-size: 20px;
   color: #ffffff;
 }
 
@@ -148,7 +150,7 @@ time {
 /* (디테일 칸) */
 .concerts-details {
   display: flex;
-  padding: 45px 60px;
+  padding: 45px 55px;
   gap: 20px;
   
 }
