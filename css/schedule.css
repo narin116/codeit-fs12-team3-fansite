@@ -47,9 +47,9 @@ a:hover {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   gap: 20px;
-  padding: 200px 130px;
+  padding: 300px 200px;
   /* border: 1px solid white; */
 
   font-size: 60px;
@@ -69,8 +69,27 @@ header::after {
 }
 
 .header_a {
+  cursor: pointer;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: 400;
+  color: #c6c6c8;
+  
+}
+
+.title {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: end;
+  font-family: SadocWild;
+  gap: 30px;
+  font-size: 100px;
+}
+
+.title-p {
+  
+  font-family: pretendard;
+   font-size: 35px;
   font-weight: 400;
   color: #c6c6c8;
 }
@@ -79,7 +98,7 @@ header::after {
 main {
   display: flex;
   flex-direction: column;
-  padding: 50px 130px;
+  padding: 100px 200px;
   /* border: 1px solid white; */
   gap: 120px;
 
@@ -87,12 +106,15 @@ main {
   
 }
 
+
 /* --main -> 에정 목록---- */
 .update-concerts {
+  font-size: 70px;
+  font-weight: 300;
   font-style: italic;
 }
 details {
-  padding: 25px 20px;
+  padding: 30px 20px;
 
 }
 
@@ -119,19 +141,19 @@ time {
 
 .year {
   writing-mode: vertical-rl;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
   font-style: normal;
 }
 
 .date {
   display: flex;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 800;
 }
 
 .day {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 500;
   
 }
@@ -140,20 +162,21 @@ time {
   display: flex;
   align-items: flex-end;
   text-align: center;
-  font-size: 35px;
+  font-size: 50px;
   font-weight: 500;
   
   gap: 20px
 }
 
 .atea_name{
-  font-size: 28px;
+  font-size: 42px;
   font-weight: 450;
   color: #bd0f1b;
 }
 
 .ticket, .done {
-  font-size: 20px;
+  font-size: 35px;
+  font-weight: 350;
   color: #ffffff;
 }
 
@@ -162,32 +185,34 @@ time {
 /* (디테일 칸) */
 .concerts-details {
   display: flex;
-  padding: 45px 55px;
+  padding: 70px 55px 40px 55px;
   gap: 20px;
   
 }
 
 .concerts-details img {
   width: 100%;
-  max-width: 250px;
+  max-width: 350px;
   border-radius: 20px;
   height: auto;
   object-fit: contain;
 }
+
 .details-contents{
   line-height: 55px;
 }
+
 th {
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 40px;
+  font-weight: 300;
   font-style: normal;
   padding: 20px;
   /* color: #a3a2a2; */
 }
 
 td {
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 45px;
+  font-weight: 400;
   font-style: normal;
 
 }
@@ -195,6 +220,8 @@ td {
 /* --main -> 지난 목록---- */
 #past-concerts {
   font-style: italic;
+  font-size: 70px;
+  font-weight: 300;
   color: #aaa9a9;
   padding: 200px 0;
   /* border: 1px solid white; */
