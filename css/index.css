@@ -1,5 +1,12 @@
 @font-face {
     font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
     font-weight: 500;
     font-display: swap;
@@ -23,6 +30,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 10;
+    font-family: "Pretendard";
     background-color: #ffffff;
 }
 
@@ -208,8 +216,17 @@ a:hover {
     padding: 20px 100px;
     background-color: white;
     color: #4F5054;
-    
     scroll-snap-align: start;
+}
+
+.footer p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 500px;
+
+    font-family: "Pretendard";
+    font-weight: 100;
 }
 
 .footer img {
@@ -221,7 +238,8 @@ a:hover {
 
 .footer_social {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    width: 500px;
     gap: 20px;
 }
