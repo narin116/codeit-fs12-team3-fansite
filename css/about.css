@@ -94,3 +94,21 @@ a:hover {
 }
 
 /* footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: white;
+  color: #4f5054;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer img {
+  width: 30px;
+}
