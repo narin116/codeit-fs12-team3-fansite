@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1:1 문의 게시판</title>
+    <title>Writing</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/community.css" />
     <link rel="stylesheet" href="../css/common.css" />
@@ -30,52 +30,47 @@
 
     <main>
       <header>
-        <h1>1:1 문의 게시판</h1>
+        <h1>Writing</h1>
       </header>
       <!-- 탭 메뉴 -->
-      <nav class="tab-menu">
-        <a href="../community.html">NOTICE</a>
-        <a href="./faq.html">FAQ</a>
-        <a href="./qna.html">Q&A</a>
-        <a href="./mtom.html" class="active">1:1 문의</a>
-      </nav>
+      <section class="writing">
+        <!-- first name -->
+        <section class="writing-firstName">
+          <!-- 소제목 -->
+          <section class="writting-detail">
+            <p class="text-name">First name</p>
+            <input class="text-value" type="text" />
+          </section>
+          <section>
+            <p class="text-name">First name</p>
+            <input class="text-value" type="text" />
+          </section>
+        </section>
 
-      <!-- 게시판 리스트 -->
-      <ul class="board-list" aria-label="Q&A 게시판 목록">
-        <!-- 헤더 -->
-        <li class="header">
-          <p class="no">No</p>
-          <p class="title">제목</p>
-          <p class="author">글쓴이</p>
-          <p class="date">작성시간</p>
-        </li>
+        <!-- Email -->
+        <section>
+          <p class="text-name">Email</p>
+          <input class="text-value" type="text" />
+        </section>
 
-        <!-- 게시글 행 -->
-        <li>
-          <p class="no">🚩</p>
-          <p class="title">사이트 이전 안내</p>
-          <p class="author">관리자</p>
-          <p class="date">2021-01-26</p>
-        </li>
+        <!-- 제목 -->
+        <section>
+          <p class="text-name">Title</p>
+          <input class="text-value textBox" type="text" />
+        </section>
 
-        <li>
-          <p class="no">🔒 1</p>
-          <p class="title">[문의] 문의드립니다.</p>
-          <p class="author">익명</p>
-          <p class="date">2019-09-24</p>
-        </li>
-      </ul>
+        <!-- Message -->
+        <section>
+          <p class="text-name">Message</p>
+          <input class="text-value textBox" type="text" />
+        </section>
 
-      <!-- 글쓰기 버튼 -->
-      <section class="class-write-btn">
-        <a href="./community-write.html">
-          <button class="write-btn">글쓰기</button></a
-        >
-      </section>
-      <!-- 검색창 -->
-      <section class="search-box">
-        <input type="text" placeholder="검색어 입력" />
-        <button type="submit">🔍</button>
+        <!-- 완료 버튼 -->
+        <section class="submit-btn">
+          <a href="../community.html">
+            <button class="write-btn">Submit</button></a
+          >
+        </section>
       </section>
     </main>
 
