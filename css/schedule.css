@@ -10,37 +10,36 @@ body::-webkit-scrollbar {
 
 /* --------top-------- */
 a {
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
 }
-
 .top {
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
 }
 
 .gnb {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 100px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7ed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7ed;
 }
 
 .gnb img {
-  width: 50px;
+    width: 50px;
 }
 
 .gnb_menu {
-  display: flex;
-  gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 
 a:hover {
-  color: #767882;
+    color: #767882;
 }
 
 /* ------header------- */
@@ -86,10 +85,13 @@ header::after {
   font-size: 100px;
 }
 
+
+
+
 .title-p {
   
   font-family: pretendard;
-   font-size: 35px;
+  font-size: 35px;
   font-weight: 400;
   color: #c6c6c8;
 }
@@ -114,7 +116,7 @@ main {
   font-style: italic;
 }
 details {
-  padding: 30px 20px;
+  padding: 0px 20px 30px 20px;
 
 }
 
@@ -255,4 +257,64 @@ details summary {
 
 .footer img {
     width: 30px;
+}
+/* 반응형 */
+
+@media(max-width: 1980px) {
+  header {
+     padding: 150px 100px;  
+  }
+
+  .title{ 
+  font-size: 50px;
+  gap: 15px;
+  /* color: red; */
+  }
+  .title-p, .header_a{
+    font-size: 18px;
+  }
+
+  /* main */
+  main {
+    padding: 80px 100px;
+  }
+  .update-concerts, #past-concerts {
+    font-size: 27px;
+  }
+  .year{
+    font-size: 16px;
+  }
+  .date{
+    font-size: 47px;
+  }
+  .day {
+    font-size: 20px;
+  }
+  .main-atea {
+    font-size: 27px;
+    
+  }
+  .atea_name {
+    font-size: 22px;
+  }
+  .ticket, .done{
+    font-size: 18px;
+  }
+  /* 디테일 */
+  th{
+    font-size: 25px;
+    line-height: 10px;
+  }
+
+  td{
+    font-size: 25px;
+  }
+
+  .concerts-details img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 20px;
+  height: auto;
+  object-fit: contain;
+}
 }
