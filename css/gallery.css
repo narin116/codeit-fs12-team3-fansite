@@ -2,6 +2,13 @@
 
 body {
   background-color: #070b0d;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -38,19 +45,23 @@ a:hover {
   color: #767882;
 }
 
+main {
+  flex: 1;
+}
 
 .gallery {
     max-width: 2100px;
     margin: 0 auto;
-    padding: 180px 20px;
+    padding: 100px 20px;  /* 180 → 120 */
 }
 
 .gallery-title {
-    font-size: 38px;
+    font-size: 48px;
     color: #4F5054;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
     font-family: 'MyCustomFont'; 
+    margin-top: -40px;
     
 }
 
@@ -58,7 +69,8 @@ a:hover {
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 28px;
+    margin-top: 60px;
 }
 
 .gallery-item {
