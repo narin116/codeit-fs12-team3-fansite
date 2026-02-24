@@ -1,4 +1,4 @@
-body {
+.big-container {
   background-color: #070b0d;
 }
 
@@ -15,6 +15,8 @@ a {
 .header {
   position: sticky;
   top: 0;
+  z-index: 10;
+  font-family: "Pretendard";
   background-color: #ffffff;
 }
 
@@ -111,13 +113,30 @@ a:hover {
   padding: 20px 100px;
   background-color: white;
   color: #4f5054;
+  scroll-snap-align: start;
+}
+
+.footer p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 500px;
+
+  font-family: "Pretendard";
+  font-weight: 100;
+}
+
+.footer img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
 }
 
 .footer_social {
   display: flex;
-  justify-content: center;
-}
-
-.footer img {
-  width: 30px;
+  justify-content: end;
+  align-items: center;
+  width: 500px;
+  gap: 20px;
 }
