@@ -9,41 +9,22 @@ body::-webkit-scrollbar {
 }
 
 /* --------top-------- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
 a {
     text-decoration: none;
     font-size: 20px;
     color: black;
 }
-.top {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-}
 
-.gnb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7ed;
-}
-
-.gnb img {
-    width: 50px;
-}
-
-.gnb_menu {
-    display: flex;
-    gap: 30px;
-}
-
-a:hover {
-    color: #767882;
-}
-
-/* ------header------- */
-header {
+/* ------hero------- */
+.hero-title {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -56,7 +37,7 @@ header {
   
 }
 
-header::after {
+.hero-title::after {
   content: ""; /* 가상 요소 필수 속성 */
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -248,20 +229,13 @@ details summary {
     padding: 20px 100px;
     background-color: white;
     color: #4F5054;
+    scroll-snap-align: start;
 }
 
-.footer_social {
-    display: flex;
-    justify-content: center;
-}
-
-.footer img {
-    width: 30px;
-}
 /* 반응형 */
 
-@media(max-width: 1980px) {
-  header {
+@media(max-width: 2160px) {
+  .hero-title {
      padding: 150px 150px;  
   }
 
