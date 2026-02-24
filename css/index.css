@@ -109,7 +109,7 @@ a {
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 95px);
-    padding: 100px 200px;
+    padding: 70px 0;
     align-items: center;
     gap: 50px;
 
@@ -136,16 +136,18 @@ a {
     text-shadow: 1px 1px 1px #FFFFFF;
 }
 
+.main_section3 img {
+    width: 400px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
 .main_section3_p {
     font-family: "Pretendard";
     font-size: 25px;
     color: #000000;
     background-color: #ffffff;
     padding: 5px;
-}
-
-.main_section3 img {
-    width: 400px;
 }
 
 /*
