@@ -87,12 +87,13 @@ header h1 {
 /* 검색창 */
 .search-box {
   text-align: center;
+  margin: 10px 0;
 }
 
 .search-box input {
   width: 250px;
   padding: 8px 12px;
-  height: 25px;
+  height: 42px;
   font-size: 0.9rem;
   border: 1px solid #ccc;
   outline: none;
@@ -182,7 +183,7 @@ header h1 {
   box-sizing: border-box;
 }
 .textBox {
-  height: 50px;
+  height: 150px;
 }
 .submit-btn {
   display: flex;
@@ -192,4 +193,9 @@ header h1 {
 }
 input::placeholder {
   color: #b8b8b8;
+}
+.writting-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
