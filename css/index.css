@@ -1,14 +1,16 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
 
 html {
     scroll-snap-type: y mandatory;
-}
-
-body {
-    background-color: black;
-    margin: 0;
 }
 
 a {
@@ -52,6 +54,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: black;
 }
 
 .main_font_title {
@@ -79,14 +82,6 @@ a:hover {
     scroll-margin-top: 95px;
 }
 
-.main_section1_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
 .main_section2 {
     display: flex;
     justify-content: space-between;
@@ -106,33 +101,51 @@ a:hover {
 
 .main_section2_container {
     display: flex;
-    width: 300px;
+    width: 400px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
 }
 
 #genre {
     display: flex;
     flex-direction: column;
-    font-family: pretendard;
-    align-items: center;
-    font-size: 40px;
-    color: white;
-    gap: 10px;
+    font-family: "SadocWild";
+    justify-content: center;
+    align-items: start;
+    font-size: 50px;
+    color: black;
+    gap: 50px;
 }
 
-#genre_content {
+.genre_label {
+    padding: 10px;
     background-color: #7A1118;
+}
+
+#genre_cont {
+    font-family: "Pretendard";
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b6b8bf;
+}
+
+#postrock {
+    padding-left: 100px;
+}
+
+#exprock {
+    padding-left: 50px;
+    font-size: 45px;
 }
 
 .main_section3 {
     display: flex;
+    flex-direction: column;
     min-height: calc(100vh - 95px);
     padding: 100px 200px;
-    justify-content: start;
     align-items: center;
+    gap: 50px;
 
     scroll-snap-align: start;
     scroll-margin-top: 95px;
@@ -143,45 +156,39 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+}
+
+.main_section3_title {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    font-family: "SadocWild";
+    font-size: 70px;
+    color: #7A1118;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.main_section3_p {
+    font-family: "Pretendard";
+    font-size: 25px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 5px;
 }
 
 .main_section3 img {
-    width: 600px;
+    width: 400px;
 }
-
-#top_btn {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: white;
-    color: #4F5054;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-
-    /* 초기에는 숨김 */
-    opacity: 0;
-    pointer-events: none;
-
-    transition: opacity 0.3s ease;
-}
-
-/* section1 스냅 아웃 후 버튼 보이기 */
-.main_section1:has(+ .main_section2) ~ #top_btn {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 
 /*
+.btn_container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 #top_btn {
     display: flex;
     justify-content: center;
@@ -189,10 +196,8 @@ a:hover {
     width: 80px;
     height: 80px;
     color:#4F5054;
-    background-color: white;
     border-radius: 100px;
     font-size: 20px;
-    
 }
 */
 
