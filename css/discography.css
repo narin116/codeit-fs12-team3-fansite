@@ -1,12 +1,21 @@
 body {
+    overflow: auto;
     margin: 0;
     font-family: 'Pretendard', sans-serif;
     background: #f2f2f2;
+    background-image: url("../img/배경.jpg");
+    background-repeat: no-repeat;
+    background-size: 1600px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 main {
     margin-right: 280px;
     padding-top: 90px;
+    margin-bottom: 150px;
 }
 
 /* ================= 상단 ================= */
@@ -47,8 +56,10 @@ a:hover {
 
 /* ================= 앨범 상세 ================= */
 .disco_album_detail {
+    scroll-margin-top: 90px;
     display: none;
     max-width: 800px;
+    min-height: 880px;
     margin: 0 auto 100px;
     padding: 40px;
     background: #fff;
@@ -137,18 +148,27 @@ a:hover {
     border-radius: 4px;
 }
 
-/* ================= 하단 =================
+/* ================= 하단 ================= */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: white;
+    color: #4F5054;
+    position: relative;
+    z-index: 1000;
+}
 
 .footer_social {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 
 .footer img {
     width: 30px;
-} */
+}
 
 @font-face {
     font-family: 'MyCustomFont';
