@@ -1,3 +1,7 @@
+
+* {
+    box-sizing: border-box;}
+
 body {
   background-color: #070B0D;
   color: white;
@@ -8,28 +12,13 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* --------top-------- */
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-snap-type: y mandatory;
-}
-
-a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-}
-
 /* ------hero------- */
 .hero-title {
   display: flex;
   justify-content: space-between;
   align-items: end;
   gap: 20px;
-  padding: 300px 200px;
+  padding: 250px 200px;
   /* border: 1px solid white; */
 
   font-size: 60px;
@@ -85,6 +74,7 @@ main {
   /* border: 1px solid white; */
   gap: 120px;
 
+
   font-size: 35px;
   
 }
@@ -92,6 +82,7 @@ main {
 
 /* --main -> 에정 목록---- */
 .update-concerts {
+  min-height: 2000px;
   font-size: 70px;
   font-weight: 300;
   font-style: italic;
@@ -106,7 +97,7 @@ summary {
   justify-content: space-between;
   align-items: center;
   /* gap: 100px; */
-  padding: 30px 50px;
+  padding: 20px 20px;
 }
 
 summary:hover {
@@ -207,6 +198,7 @@ td {
   font-weight: 300;
   color: #aaa9a9;
   padding: 200px 0;
+  height: 100vh;
   /* border: 1px solid white; */
 }
 
@@ -221,22 +213,13 @@ details summary {
   font-style: normal;
 }
 
-/* ---------footer-------------------- */
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: white;
-    color: #4F5054;
-    scroll-snap-align: start;
-}
+
 
 /* 반응형 */
 
-@media(max-width: 2160px) {
+@media(max-width: 2600px) {
   .hero-title {
-     padding: 150px 150px;  
+     padding: 150px 180px;  
   }
 
   .title{ 
@@ -250,13 +233,17 @@ details summary {
 
   /* main */
   main {
-    padding: 80px 150px;
+    padding: 80px 180px;
   }
   .update-concerts, #past-concerts {
     font-size: 23px;
+    min-height: 800px;
+  }
+  time{
+    gap: 4px;
   }
   .year{
-    font-size: 13px;
+    font-size: 14px;
   }
   .date{
     font-size: 35px;
