@@ -212,11 +212,16 @@ a:hover {
     scroll-snap-align: start;
 }
 
+.footer img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+}
+
 .footer_social {
     display: flex;
     justify-content: center;
-}
-
-.footer img {
-    width: 30px;
+    align-items: center;
+    gap: 20px;
 }
