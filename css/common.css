@@ -7,7 +7,7 @@ a {
 .header {
     position: sticky;
     top: 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .gnb {
@@ -15,7 +15,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 20px 100px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-bottom: 1px solid #e5e7ed;
 }
 
@@ -32,12 +32,19 @@ a:hover {
     color: #767882;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: white;
+    color: #4F5054;
+}
+
 .footer_social {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 
 .footer img {
     width: 30px;
