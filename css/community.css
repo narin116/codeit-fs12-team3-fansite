@@ -17,15 +17,54 @@ header h1 {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  font-weight: bolder;
   padding: 70px;
 }
+.main-a {
+  position: relative; /* 비디오와 내용 겹치도록 */
+  z-index: 1;
+  overflow: hidden;
+  padding: 50px 20px; /* 기존 패딩 유지 */
+}
+/* main-a 전체 오버레이 */
+.main-a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* 반투명 흰색 */
+  z-index: 0;
+}
+/* 비디오 스타일 */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 화면 꽉 채우기 */
+  z-index: 0; /* 콘텐츠보다 뒤 */
+}
 
+/* main-a 안의 텍스트/컨텐츠는 비디오 위에 표시 */
+.main-a > header,
+.main-a .tab-menu,
+.main-a .board-list,
+.main-a .class-write-btn,
+.main-a .search-box {
+  position: relative;
+  z-index: 1;
+  color: white; /* 동영상 위 글씨는 흰색 추천 */
+}
 .main {
   position: relative; /* ::before 기준 */
   width: 100%;
   height: 100%;
   background: none; /* 기존 배경 제거 */
 }
+/* main-a 전체를 배경 동영상으로 */
 
 .main::before {
   content: "";
@@ -34,8 +73,8 @@ header h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/write_bgc.webp);
   background-position: center;
+  background-image: url(../img/write_bgc.webp);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5; /* 배경만 투명 */
@@ -57,25 +96,26 @@ header h1 {
 
 .tab-menu a {
   text-decoration: none;
-  color: #666;
+  color: #fff;
   font-weight: 500;
   padding-bottom: 5px;
   border-bottom: 2px solid transparent;
 }
 
 .tab-menu a.active {
-  border-color: #222;
-  color: #222;
+  border-color: #fff;
+  color: #fff;
   font-weight: 700;
 }
 
-/* 게시판 리스트 */
+/* 게시판 z-index */
 .board-list {
-  list-style: none;
-  border-top: 1px solid #ccc;
-  margin: 30px 150px;
-  height: 455px;
-  padding: 10px;
+  position: relative;
+  z-index: 1;
+  background-color: white; /* 조금 투명해도 좋음 */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .board-list li {
@@ -148,7 +188,7 @@ header h1 {
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-right: 180px;
+  margin: 10px 10px;
 }
 .write-btn {
   display: flex;
