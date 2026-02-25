@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "SadocWild";
+  src: url("../font/SadocWild.ttf");
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.section {
+  border: 1px solid #555;
+  border-radius: 16px;
+  max-width: 600px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.title {
+  font-family: "SadocWild";
+  font-size: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: color 0.2s;
+}
+
+.title-logo {
+  height: 1em;
+}
+
+.title:hover {
+  color: #f9060b;
+}
+
+.title:hover .title-logo {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.insertbar {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.insertbar_text {
+  width: 60px;
+  text-align: right;
+  flex-shrink: 0;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.insertbar_box {
+  flex: 1;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  padding: 6px 10px;
+  height: 32px;
+}
+
+.file-box {
+  flex: 1;
+  border: 1px dashed #555;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.message-wrap {
+  flex: 1;
+  position: relative;
+}
+
+.message-box {
+  width: 100%;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  padding: 8px 10px;
+  height: 100px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.char-count {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.complete-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.complete-btn {
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 6px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.complete-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Common.css 붙여넣기 */
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+body {
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-family: "Pretendard";
+  background-color: #ffffff;
+}
+
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7ed;
+}
+
+.gnb img {
+  width: 50px;
+}
+
+.gnb_menu {
+  display: flex;
+  gap: 30px;
+}
+
+a:hover {
+  color: #767882;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background-color: white;
+  color: #4f5054;
+  scroll-snap-align: start;
+}
+
+.footer p {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 500px;
+
+  font-family: "Pretendard";
+  font-weight: 100;
+}
+
+.footer img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 500px;
+  gap: 20px;
+}

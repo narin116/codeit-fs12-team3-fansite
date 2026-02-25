@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+body {
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-family: "Pretendard";
+    background-color: #ffffff;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7ed;
+}
+
+.gnb img {
+    width: 50px;
+}
+
+.gnb_menu {
+    display: flex;
+    gap: 30px;
+}
+
+a:hover {
+    color: #767882;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: white;
+    color: #4F5054;
+}
+
+.footer_container {
+    width: 33%;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    font-family: "Pretendard";
+    font-weight: 100;
+}
+
+.footer img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 30px;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+/* 커뮤니티 본문 */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background: #fff;
+  color: #222;
+  margin: 0 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* 헤더 */
+header h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bolder;
+  padding: 70px;
+}
+.main-a {
+  position: relative; /* 비디오와 내용 겹치도록 */
+  z-index: 1;
+  overflow: hidden;
+  padding: 50px 20px; /* 기존 패딩 유지 */
+}
+
+/* 비디오 스타일 */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 화면 꽉 채우기 */
+  z-index: 0; /* 콘텐츠보다 뒤 */
+}
+
+/* main-a 안의 텍스트/컨텐츠는 비디오 위에 표시 */
+.main-a > header,
+.main-a .tab-menu,
+.main-a .board-list,
+.main-a .class-write-btn,
+.main-a .search-box {
+  position: relative;
+  z-index: 1;
+}
+.main {
+  position: relative; /* ::before 기준 */
+  width: 100%;
+  height: 100%;
+  background: none; /* 기존 배경 제거 */
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url(../img/write_bgc.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5; /* 배경만 투명 */
+  z-index: 0; /* 자식 요소 아래 배치 */
+  pointer-events: none; /* 클릭 이벤트 차단 안 함 */
+}
+
+.main > * {
+  position: relative;
+  z-index: 1; /* 자식 요소는 위로 올려 선명하게 */
+}
+/* 탭 메뉴 */
+.tab-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tab-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-menu a.active {
+  border-color: #fff;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* 게시판 z-index */
+.board-list {
+  position: relative;
+  z-index: 1;
+  background-color: white; /* 조금 투명해도 좋음 */
+  padding: 20px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.board-list li {
+  display: grid;
+  grid-template-columns: 60px 1fr 120px 120px;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 8px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
+}
+
+.board-list li.header {
+  background: #fafafa;
+  font-weight: 700;
+}
+
+.board-list li p {
+  margin: 0; /* p 기본 margin 제거 */
+}
+
+.board-list li .no,
+.board-list li .author,
+.board-list li .date {
+  text-align: center;
+  color: #666;
+}
+
+.board-list li .title {
+  color: #333;
+  text-align: center;
+}
+
+/* 홀수행 배경색 */
+.board-list li:nth-child(odd):not(.header) {
+  background: #fcfcfc;
+}
+
+/* 검색창 */
+.search-box {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.search-box input {
+  width: 250px;
+  padding: 8px 12px;
+  height: 42px;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  height: 42px;
+  border: none;
+  background: #222;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #444;
+}
+
+/* 글쓰기 버튼 */
+.class-write-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 10px 10px;
+}
+.write-btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  font-weight: 600;
+  border: none;
+}
+
+.write-btn:hover {
+  background: #444;
+}
+
+.write {
+  position: relative; /* ::before 기준 */
+  background: none; /* 기존 배경 제거 */
+}
+
+.writing {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.writing-firstName {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.writing section {
+  width: 100%;
+}
+.text-value {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+}
+.textBox {
+  height: 150px;
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+input::placeholder {
+  color: #b8b8b8;
+}
+.writting-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

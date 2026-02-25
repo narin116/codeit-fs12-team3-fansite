@@ -127,3 +127,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+@font-face {
+  font-family: "SadocWild"; /* 나중에 사용할 이름 */
+  src: url("../font/SadocWild.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
