@@ -2,6 +2,10 @@
 * {
     box-sizing: border-box;}
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: #070B0D;
   color: white;
@@ -195,7 +199,13 @@ table{
 .table-th{
   color: #ffffff;
   font-weight: 900;
-  scroll-margin-top: 10px; /* 고정 메뉴바의 높이나 원하는 여백만큼 숫자를 조절*/
+  
+}
+
+#th0717 {
+  
+  scroll-margin-top: 300px;
+  scroll-snap-align: start; /* 섹션의 시작 부분에 딱 맞춤 */
 }
 
 .ahead, .tbody{
