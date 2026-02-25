@@ -61,7 +61,46 @@ body::-webkit-scrollbar {
   font-size: 100px;
 }
 
+/* -----table 달력------ */
+table{
+  color: #c1c1c2;
+  /* border: 1px solid white; */
+}
 
+.table-th{
+  color: #ffffff;
+  font-weight: 900;
+  
+}
+caption{
+  font-size: 30px;
+  text-align: left;
+  padding-left: 10px;
+  
+}
+#th0717 {
+  
+  scroll-margin-top: 300px;
+  scroll-snap-align: start; /* 섹션의 시작 부분에 딱 맞춤 */
+}
+
+th {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  padding: 15px 13px 5px 13px;
+  text-align: center;
+  white-space: nowrap;
+  border-bottom: 0.1px solid #767882;
+}
+td {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 7px 0;
+  font-style: normal;
+
+}
 
 /* ------main------- */
 main {
@@ -77,7 +116,7 @@ main {
 }
 
 
-/* --main -> 에정 목록---- */
+/* --main -> 예정 목록---- */
 .update-concerts {
   min-height: 2000px;
   font-size: 70px;
@@ -177,10 +216,10 @@ time {
   font-size: 40px;
   font-weight: 300;
   font-style: normal;
-  padding: 20px;
+  padding: 0 20px;
   text-align: start;
   white-space: nowrap;
-  /* color: #a3a2a2; */
+  border: none;
 }
 
 .details-td {
@@ -189,44 +228,7 @@ time {
   font-weight: 400;
   /* line-height: 30px; */
   font-style: normal;
-
-}
-table{
-  color: #c1c1c2;
-  /* border: 1px solid white; */
-}
-
-.table-th{
-  color: #ffffff;
-  font-weight: 900;
   
-}
-
-#th0717 {
-  
-  scroll-margin-top: 300px;
-  scroll-snap-align: start; /* 섹션의 시작 부분에 딱 맞춤 */
-}
-
-.ahead, .tbody{
-  display: flex;
-  gap: 40px;
-}
-th {
-  font-size: 20px;
-  font-weight: 400;
-  font-style: normal;
-  padding: 10px 10px;
-  text-align: start;
-  white-space: nowrap;
-  /* color: #a3a2a2; */
-}
-td {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 300;
-  padding: 7px 0;
-  font-style: normal;
 
 }
 /* --main -> 지난 목록---- */
@@ -262,7 +264,7 @@ details summary {
 
   .title{ 
   font-size: 40px;
-  gap: 13px;
+  gap: 25px;
   /* color: red; */
   }
   .title-p, .header_a{
