@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 .hero-title {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   gap: 20px;
   padding: 250px 200px;
   /* border: 1px solid white; */
@@ -39,6 +39,8 @@ body::-webkit-scrollbar {
 
 .header_a {
   cursor: pointer;
+
+  font-family: pretendard;
   text-decoration: none;
   font-size: 35px;
   font-weight: 400;
@@ -56,15 +58,6 @@ body::-webkit-scrollbar {
 }
 
 
-
-
-.title-p {
-  
-  font-family: pretendard;
-  font-size: 35px;
-  font-weight: 400;
-  color: #c6c6c8;
-}
 
 /* ------main------- */
 main {
@@ -176,21 +169,56 @@ time {
   line-height: 55px;
 }
 
-th {
+.details-th {
   font-size: 40px;
   font-weight: 300;
   font-style: normal;
   padding: 20px;
+  text-align: start;
+  white-space: nowrap;
   /* color: #a3a2a2; */
 }
 
-td {
+.details-td {
+  text-align: start;
   font-size: 45px;
   font-weight: 400;
+  /* line-height: 30px; */
   font-style: normal;
 
 }
+table{
+  color: #c1c1c2;
+  /* border: 1px solid white; */
+}
 
+.table-th{
+  color: #ffffff;
+  font-weight: 900;
+  scroll-margin-top: 10px; /* 고정 메뉴바의 높이나 원하는 여백만큼 숫자를 조절*/
+}
+
+.ahead, .tbody{
+  display: flex;
+  gap: 40px;
+}
+th {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px 10px;
+  text-align: start;
+  white-space: nowrap;
+  /* color: #a3a2a2; */
+}
+td {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  padding: 7px 0;
+  font-style: normal;
+
+}
 /* --main -> 지난 목록---- */
 #past-concerts {
   font-style: italic;
@@ -262,12 +290,12 @@ details summary {
     font-size: 16px;
   }
   /* 디테일 */
-  th{
+  .details-th{
     font-size: 22px;
     line-height: 10px;
   }
 
-  td{
+  .details-td{
     font-size: 23px;
   }
 
