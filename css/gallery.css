@@ -3,8 +3,7 @@
 body {
   background-color: #070b0d;
   overflow: auto;
-  display: flex;
-  flex-direction: column;
+  
 }
 
 body::-webkit-scrollbar {
@@ -45,18 +44,20 @@ a:hover {
   color: #767882;
 }
 
+/*메인이 남은 여백 자리 차지*/
 main {
   flex: 1;
 }
 
+/*메인 섹션*/
 .gallery {
     max-width: 2100px;
     margin: 0 auto;
-    padding: 100px 20px;  /* 180 → 120 */
+    padding: 100px 20px; 
 }
 
 .gallery-title {
-    font-size: 48px;
+    font-size: 58px;
     color: #4F5054;
     margin-bottom: 50px;
     text-align: center;
@@ -65,7 +66,6 @@ main {
     
 }
 
-/*기본틀*/
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
