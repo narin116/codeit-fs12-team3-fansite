@@ -3,6 +3,9 @@
 body {
   background-color: #070b0d;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   
 }
 
@@ -51,7 +54,7 @@ main {
 
 /*메인 섹션*/
 .gallery {
-    max-width: 2100px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 100px 20px; 
 }
