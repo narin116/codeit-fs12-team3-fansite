@@ -13,11 +13,9 @@
 👉 **배포 링크**
 
 ```
-https://your-deploy-link.com
+https://quiet-bunny-8abae8.netlify.app/
 ```
-
-> ※ GitHub Pages / Netlify / Vercel 배포 링크로 교체해주세요.
-
+>netlify로 배포한 링크입니다.
 ---
 
 ## 📌 Project Overview
