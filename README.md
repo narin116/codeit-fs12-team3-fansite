@@ -12,10 +12,9 @@
 
 👉 **배포 링크**
 
-```
 https://quiet-bunny-8abae8.netlify.app/
-```
->netlify로 배포한 링크입니다.
+
+>netlify로 배포하였습니다.
 ---
 
 ## 📌 Project Overview
@@ -173,6 +172,28 @@ SadocWild.ttf사용
 
 
 ---
+
+## Trouble Shooting
+https://www.notion.so/Trouble-Shooting-311751f6b3c88010b1d6f947785192b2?source=copy_link
+
+---
+
+## 느낀점
+**김나린**
+<br/>
+**김상우**
+<br/>
+**김서하**
+<br/>
+**박태진**
+<br/>
+**유지민**
+<br/>
+**최광헌**
+<br/>
+**한고은**
+<br/>
+**한희나**
 
 ### ✨ Author
 
