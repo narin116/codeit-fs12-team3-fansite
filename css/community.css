@@ -162,6 +162,7 @@ header h1 {
 .search-box button {
   padding: 8px 12px;
   font-size: 0.9rem;
+  height: 42px;
   border: none;
   background: #222;
   cursor: pointer;
