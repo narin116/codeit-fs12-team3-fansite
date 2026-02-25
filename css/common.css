@@ -65,11 +65,13 @@ a:hover {
     color: #4F5054;
 }
 
+.footer_container {
+    width: 33%;
+}
+
 .footer p {
     display: flex;
     align-items: center;
-    width: 500px;
-
     font-family: "Pretendard";
     font-weight: 100;
 }
@@ -78,6 +80,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     width: 30px;
 }
 
@@ -85,6 +88,5 @@ a:hover {
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 500px;
     gap: 20px;
 }
